@@ -1,0 +1,55 @@
+/*general styles*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary: #1c2a38;
+    --secondary:#2d8cff;
+    --accent1:#ff7a30;
+    --accent2:#0e0e0f;
+    --background: #e6e8eb;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+/* nav styles*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color:var(--primary);
+}
+nav>a{
+    background-color:var(--secondary);
+    color:white;
+    padding:10px 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a[href="sign.html"],
+a[href="log.html"]{
+    border-radius:57px;
+}
+nav :first-child{
+    background-color:transparent;
+}
+/*homes page*/
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+    padding:20px 0;
+}
+div.feat-car{
+    display:flex;
+    justify-content:space-between;
+    align-items:space-between;
+    width:92vw;
+    justify-self:center; 
+}
