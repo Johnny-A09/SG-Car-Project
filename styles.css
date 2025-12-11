@@ -53,3 +53,9 @@ div.feat-car{
     width:92vw;
     justify-self:center; 
 }
+/*encyclopedia*/
+.make-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:space-between;
+}
