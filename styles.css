@@ -10,6 +10,7 @@
     --background: #e6e8eb;
 }
 body{
+    height:100%;
     margin: 0;
     padding: 0;
     background-color: var(--background);
@@ -17,23 +18,26 @@ body{
 /* nav styles*/
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 1%;
+    padding: 0;
     background-color:var(--primary);
+}
+img[src="images/logo.png"]{
+    height:75px;
+    padding:0;
+    margin:0;
+    border-radius:15px;
 }
 nav>a{
     background-color:var(--secondary);
     color:white;
+    border-radius:10px;
     padding:10px 20px;
 }
 a{
     text-decoration: none;
     color: inherit;
-}
-a[href="sign.html"],
-a[href="log.html"]{
-    border-radius:57px;
 }
 nav :first-child{
     background-color:transparent;
@@ -53,9 +57,71 @@ div.feat-car{
     width:92vw;
     justify-self:center; 
 }
+footer{
+    display:flex;
+    background-color: black;
+    color:white;
+    height:10vh;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    margin-top:100%;
+}
+footer>*{
+    padding-left:2%;
+}
+footer>a{
+    text-decoration:underline;
+}
 /*encyclopedia*/
 .make-container{
+    width:80vw;
+    display:grid;
+    grid-template-columns:repeat(4, 25%);
+    color:white;
+}
+.make-container>a{
+    background-color:var(--accent1);
+    margin:10%;
     display:flex;
-    justify-content:space-between;
-    align-items:space-between;
+}
+a>img{
+    height:100px;
+}
+a>h3{
+    align-self:center;
+    padding-left:15%;
+}
+/*bmw*/
+.bmw-main{
+    display:flex;
+}
+.car-logo{
+    height:250px;
+    margin-left:5%
+}
+.flag{
+    width:15%;
+    height:10%;
+    margin-left:40%;
+}
+.spec-make-cont{
+    display:flex;
+    align-items:center;
+}
+strong{
+    font-size:30px;    
+}
+.model-container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width:80vw; 
+}
+.model{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    margin-top:15%;
 }
