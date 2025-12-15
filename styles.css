@@ -124,4 +124,32 @@ strong{
     flex-flow:column;
     justify-content:center;
     margin-top:15%;
+    text-align:center;
+}
+.variant-1>img{
+    width:90%;
+    height:100%;
+    border-radius:20px;
+}
+/*3 series*/
+.variant-container{
+    display:grid;
+    grid-template-columns:50% 50%;
+    width:80vw;
+    height:100vh;
+}
+.variant-container>div{
+    height:30%;
+    text-align:center;
+}
+.type-1>img{
+    width:100%;
+    height:auto;
+    border-radius:20px;
+}
+/*E 30*/
+.e30-cont{
+    display:flex;
+    width:60%;
+
 }
