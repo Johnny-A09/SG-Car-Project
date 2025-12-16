@@ -151,5 +151,16 @@ strong{
 .e30-cont{
     display:flex;
     width:60%;
-
+    flex-wrap:wrap;
+}
+.e30-cont>img{
+    width:60%;
+    margin-left:10%;
+}
+.e30-cont :first-child{
+    width: 30%;
+}
+/*about us*/
+div>h1:first-of-type{
+    text-align:center;
 }
