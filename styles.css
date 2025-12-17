@@ -77,7 +77,7 @@ footer>a{
 }
 /*encyclopedia*/
 .make-container{
-    width:80vw;
+    width:90vw;
     display:grid;
     grid-template-columns:repeat(4, 25%);
     color:white;
@@ -139,8 +139,13 @@ strong{
     height:100vh;
 }
 .variant-container>div{
-    height:30%;
+    height:50%;
     text-align:center;
+}
+.E30>img{
+    width: 85%;
+    height:auto;
+    border-radius:25px;
 }
 .type-1>img{
     width:100%;
@@ -156,6 +161,7 @@ strong{
 .e30-cont>img{
     width:60%;
     margin-left:10%;
+    border-radius:25px;
 }
 .e30-cont :first-child{
     width: 30%;
@@ -163,4 +169,40 @@ strong{
 /*about us*/
 div>h1:first-of-type{
     text-align:center;
+}
+/*media queries*/
+
+@media (max-width:1528px){
+    .make-container{
+        grid-template-columns: repeat(3, 30%);
+    }
+    .model-container{
+        display:grid;
+        grid-template-columns:100%;
+    }
+}
+ @media (max-width:1120px){
+        .make-container{
+            grid-template-columns: repeat(2, 50%);
+            margin-bottom:10vh;
+        }
+        
+}
+@media (max-width:950px){
+    nav{
+        display:flex;
+        position:fixed;
+        justify-content:space-between;
+        bottom:0;
+        width:100%;
+        order:-1;
+        padding:0;
+    }
+    
+    .make-container>a>h3{
+        display:none;
+    }
+    .make-container>a{
+        justify-content:center;
+    }
 }
