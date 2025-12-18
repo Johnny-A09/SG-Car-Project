@@ -40,7 +40,11 @@ a{
     color: inherit;
 }
 nav :first-child{
+    display:flex;
     background-color:transparent;
+}
+img.logo{
+    align-self:center;
 }
 /*homes page*/
 main{
@@ -67,7 +71,7 @@ footer{
     width:100%;
     position:absolute;
     z-index:-1;
-    margin-top:100%;
+    margin-top:30%;
 }
 footer>*{
     padding-left:2%;
@@ -111,7 +115,7 @@ a>h3{
     display:flex;
     align-items:center;
 }
-strong{
+strong.make{
     font-size:30px;    
 }
 .model-container{
@@ -181,27 +185,87 @@ div>h1:first-of-type{
         grid-template-columns:100%;
     }
 }
- @media (max-width:1120px){
+ @media (max-width:1220px){
         .make-container{
             grid-template-columns: repeat(2, 50%);
             margin-bottom:10vh;
         }
-        
+        .flag{
+            margin-left:10%;
+            margin-right:5%;
+        }
+        .car-logo{
+            width:25%;
+            height:auto;
+        }
 }
 @media (max-width:950px){
     nav{
         display:flex;
         position:fixed;
-        justify-content:space-between;
+        justify-content:space-around;
         bottom:0;
         width:100%;
         order:-1;
         padding:0;
+        height:7vh;
     }
     nav>a{
-
+        color:transparent;
+        padding:0;
+        width:10%;
+        height:70%;
     }
     .make-container>a{
         justify-content:center;
+        
     }
+    .make-container>a>h3{
+        display:none;
+    }
+    img[src="images/logo.png"]{
+        display:none;
+    }
+    .variant-container{
+        grid-template-columns:100%;
+        margin-bottom:10vh;
+    }
+    .e30-cont>img{
+        order:-1;
+        width:150%;
+        height:150%;
+        margin-bottom:15%;
+        margin-left:0;
+    }
+    .e30-cont{
+        justify-content:center;
+
+    }
+    .e30-cont :first-child{
+        width: 100%;
+    }
+    a[href="index.html"]{
+        background-image:url(images/home.png);
+        background-color:var(--secondary);
+    }
+    .terms{
+        margin-bottom:10vh;
+    }
+    .feat-car{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    .E30>img{
+        width:100%;
+    }
+    .about{
+        margin-bottom:5vh;
+    }
+    .model-container{
+        margin-bottom:20vh;
+    }
+    footer{
+        margin-bottom:7%;
+    }
+    
 }
