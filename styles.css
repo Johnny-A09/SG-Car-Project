@@ -170,8 +170,8 @@ strong{
 div>h1:first-of-type{
     text-align:center;
 }
-/*media queries*/
 
+/*media queries*/
 @media (max-width:1528px){
     .make-container{
         grid-template-columns: repeat(3, 30%);
@@ -199,10 +199,7 @@ div>h1:first-of-type{
         padding:0;
     }
     nav>a{
-        
-    }
-    .make-container>a>h3{
-        display:none;
+
     }
     .make-container>a{
         justify-content:center;
